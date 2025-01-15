@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./img/Desi-holmes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Navigation */
+#navbar {
+    flex-direction: column;
+    margin-top: -75px;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    margin: 46px 2px;
+
+}
+
+#navbar::before {
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 136px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 34px;
+    align-items: left;
+}
+
+#logo img {
+    height: 80px;
+    margin: 3px 6px;
+    border-radius: 50px;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+    margin: -8px 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 21px 520px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 0px 22px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color:  rgb(251, 251, 251);;
+    height: 25px;
+
+}
+
+.search-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-section .search {
+    margin: 3px 225px;
+}
+.search-section .search>div {
+    display: inline-block;
+    position: relative;
+}
+.search-section .search>div>input {
+    color: white;
+    font-size: 16px;
+    background: #311919;
+
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px white;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+}
+.search-section .search>div>input::placeholder {
+    color:
+        #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+.search-section .search>div>input:focus::placeholder {
+    opacity: 1;
+}
+.search-section .search>div>input:focus,
+.search-section .search>div>input:not(:placeholder-shown) {
+    width: 250px;
+}
+#navbar input {
+    border: 2px solid rgb(42, 235, 42);
+    border-radius: 10px;
+    padding: 2px 17px;
+}
+
+
+.quote {
+    background-color: #000000;
+    max-width: 200px;
+}
+
+
+.cntnt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+ 
+}
+
+
+
+
+
+.container {
+    position: relative;
+  background-color: rgba(43, 112, 0, 0.2);
+  padding: 20px;
+  margin: 192px auto;
+  width: 450px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 3px solid green;
+  z-index: 3;
+}
+a{
+color: antiquewhite;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 60px #000;
+  color: black;
+}
+
+
+
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    z-index: -222;
+    left: 0px;
+    top: 0px;
+  }
+
+
+</style>
+</head>
+<body>
+
+
+    <div class="vdo">
+        <video autoplay muted loop>
+          <source src="./vdo/vdo1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+
+<div class="cntnt">
+
+    <div id="logo">
+        <a href="home.html"> <img src="./img/logo.png" alt="DP"></a>
+    </div>
+    <nav id="navbar">
+        
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#Current-section">Case</a></li>
+            <li class="item"><a href="#history-section">History</a></li>
+            <li class="item"><a href="#contact">Contact_Us</a></li>
+            
+            
+            <div class="search-section">
+                <div class="search">
+                    <div>
+                        <input type="text" placeholder="Search here. . .">
+                    </div>
+                </div>
+            </div>
+            
+        </ul>
+    </nav>
+    
+</div>
+
+
+<section id="#home">
+
+    <div class="vdo">
+        <video autoplay muted loop style="top:0%">
+          <source src="./vdo/vdo1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+</section>
+    
+<section id="#history-section">
+
+    <div class="vdo">
+        <video autoplay muted loop  style="top:120%">
+          <source src="./vdo/vdo3.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+</section>
+
+<section id="#contact">
+
+    <div class="vdo">
+        <video autoplay muted loop style="top:240%">
+          <source src="./vdo/vdo4.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+</section>
+
+<section id="#Current-section">
+
+    <div class="vdo">
+        <video autoplay muted loop style="top:360%">
+          <source src="./vdo/vdo1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+</section>
+
+
+
+</body>
+</html>

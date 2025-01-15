@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./img/Desi-holmes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cntnt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+ 
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 192px auto;
+  width: 350px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 3px solid rgb(0, 0, 0);
+}
+a{
+color: antiquewhite;
+    text-decoration: none;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: rgba(226, 223, 223, 0.21);
+  color: white;
+}
+
+button {
+  background-color: #4d0303ac;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 60px #000;
+  color: black;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+  }
+
+
+</style>
+</head>
+<body>
+
+  
+  <div class="vdo">
+    <video autoplay muted loop>
+      <source src="./vdo/vdo1.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+<div class="cntnt">
+
+  
+  <div class="container">
+    <h2>Login</h2>
+    <p>Don't have account?  <a href="signup.html">Sign up here</a></p>
+    <form>
+      
+      
+      <label for="email">EMAIL</label>
+      <input type="text" id="email" name="email" placeholder="Your Email">
+      
+      <label for="password">PASSWORD</label>
+      <input type="password" id="password" name="password" placeholder="Your Password">
+      
+      <button class="button" type="button" onclick="window.location.href = 'home.html';" >Log in</button>
+    </form>
+  </div>
+  
+</div>
+</body>
+</html>
